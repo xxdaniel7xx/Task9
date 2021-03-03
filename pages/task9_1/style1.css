@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    height: 20%;
+    margin: 50px;
+    align-content: flex-start;
+}
+
+.text_line {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 80%;
+}
+
+.container p {
+    font-size: 30px;
+}
+
+.blink {
+    animation: blink 4s infinite; /* Параметры анимации */
+}
+@keyframes blink {
+    from {text-shadow: 0 0 0}
+
+    50% {text-shadow: 0 0 6px crimson;
+    }
+    to {text-shadow: 0 0 0;
+    color: white}
+}

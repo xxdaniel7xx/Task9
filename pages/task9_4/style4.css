@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.title {
+    margin: 50px;
+    height: 20%;
+}
+
+.content {
+    height: 80%;
+    font-size: 30px;
+}

@@ -5,6 +5,14 @@
     margin: 0;
     font-family: "Exo 2", sans-serif;
 }
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: crimson;
+}
 
 body {
     display: flex;
@@ -58,17 +66,55 @@ main {
 }
 
 .container ul li a {
-    text-decoration: none;
-    color: white;
     text-transform: uppercase;
     font-size: 40px;
 
 }
 
+.container ul li a:hover {
+    color: crimson;
+    text-shadow: 2px 3px 4px #343232;
+}
+
 footer {
+    display: flex;
     flex-shrink: 1;
-    justify-self: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+
     width: 100%;
-    height: 100px;
+    min-height: 100px;
     background-color: #212121;
+    font-size: 20px;
+    color: white;
+}
+footer p {
+    margin:10px
+}
+
+.nameBlock {
+    flex-direction: column;
+    width: 30%;
+    flex-shrink: 0;
+    align-content: center;
+}
+
+.navBar {
+    height: auto;
+    width:60%;
+    flex-shrink: 0;
+
+}
+
+.navBar ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    list-style-type: none;
+}
+
+.navBar ul li {
+    margin: 20px;
 }
